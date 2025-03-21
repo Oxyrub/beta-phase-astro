@@ -1,0 +1,143 @@
+---
+import aboutPhase from "../assets/about_phase.jpg";
+import bassMusic from "../assets/bass_music.jpg";
+import team from "../assets/team.jpg";
+import commitment from "../assets/commitment.jpg";
+import equality from "../assets/equality.jpg";
+
+import bassGarden from "../assets/projects/bass_garden.jpg";
+import openBass from "../assets/projects/open_bass.jpg";
+import openTech from "../assets/projects/open_tech.jpg";
+import drift from "../assets/projects/drift.jpg";
+import grave from "../assets/projects/grave.jpg";
+import rewind from "../assets/projects/rewind.jpg";
+---
+
+<div>
+	<p class="about-paragraph">
+		PHASE, qui sommes-nous ? est une association lyonnaise dynamique et
+		engagée, active depuis près de 5 ans. Fondée par des passionnés de
+		musiques électroniques, PHASE a pour mission de promouvoir la bass music
+		sous toutes ses formes à travers des événements originaux, inclusifs et
+		accessibles à tous. Nous mettons un point d’honneur à valoriser à la
+		fois des talents locaux émergents et des artistes internationaux
+		reconnus, en créant des expériences uniques à Lyon et au-delà. Notre
+		vision : faire de la musique un vecteur de lien social, de diversité et
+		de créativité.
+	</p>
+	<img class="about-image" src={aboutPhase.src} />
+
+	<p class="bass-music-paragraph">
+		La Bass Music : un univers en pleine expansion La bass music regroupe
+		des styles variés tels que le dubstep, la drum & bass, le garage, le
+		jungle ou encore le UK bass. Ce courant musical, né au Royaume-Uni dans
+		les années 1990, puise ses racines dans des influences éclectiques comme
+		le dub jamaïcain, le hip-hop, le breakbeat ou encore la techno.
+		Caractérisée par des rythmiques percutantes et une grande diversité
+		sonore, la bass music est en constante évolution, attirant un public
+		intergénérationnel et multiculturel. Au-delà de la simple performance
+		musicale, elle représente un véritable mouvement culturel et artistique.
+	</p>
+	<img class="bass-music-image" src={bassMusic.src} />
+
+	<div class="team-paragraph">
+		Notre équipe - Alexandre PELLET, président - Alix NICOLLE, trésorière -
+		Alexis RENOARD, secrétaire - Théo CAUDERLIER, programmateur À leurs
+		côtés, plus de 70 bénévoles participent activement à l’organisation de
+		nos événements, incarnant des valeurs de solidarité, d’inclusivité et de
+		respect.
+	</div>
+	<img class="team-image" src={team.src} />
+
+	<div class="commitment-paragraph">
+		<h2>Nos Engagements : pour une fête responsable et inclusive</h2>
+		<h3>Lutte contre les violences sexistes et sexuelles (VHSS)</h3>
+		<p>
+			Depuis 2023, PHASE s’engage fermement dans la lutte contre les
+			violences et harcèlements sexistes et sexuels dans le milieu festif.
+			Nos actions : - Formation des équipes dirigeantes par l’organisme
+			Act Right (2024) - Sensibilisation et formation interne de tous les
+			bénévoles - Mise en place de règles strictes concernant les
+			programmations - Mise en place d’une Care Team lors de chaque
+			événement pour veiller sur le public et venir en support aux équipes
+			de sécurité - Prise de parole systématique pour rappeler les règles
+			de consentement à l’entrée de nos événements - Affichage de messages
+			de prévention visibles sur les sites
+		</p>
+		<img class="commitment-image" src={commitment.src} />
+		<h3>Parité et diversité dans nos programmations</h3>
+		<p>
+			Nous veillons à une représentation équilibrée des genres dans nos
+			événements. Cet engagement se traduit par des actions concrètes en
+			matière de programmation et de recrutement. Par exemple, nous
+			faisons le nécessaire pour avoir toujours au moins une artiste
+			féminine ou de minorité de genre sur chaque événement. - 30 % des
+			artistes que nous avons programmés sont des femmes ou des personnes
+			issues de minorités de genre en 2024 - 40 % des bénévoles et des
+			membres de l’équipe dirigeante et 37% de nos bénévoles sont des
+			femmes
+		</p>
+		<img class="commitment-image" src={equality.src} />
+		<h3>Soutien aux jeunes talents : tremplin artistique</h3>
+		<p>
+			Depuis 7 ans, PHASE organise des open platines accessibles à tous,
+			offrant une première scène aux jeunes artistes. Nous produisons
+			également des podcasts pour mettre en avant la scène locale.
+			Résultat : plus de 140 artistes ont été programmés sur nos
+			événements en 2024 !
+		</p>
+	</div>
+	<div>
+		<h2>Tous nos projets</h2>
+		<div class="projects">
+			<img src={bassGarden.src} />
+			<img src={openBass.src} />
+			<img src={openTech.src} />
+			<img src={drift.src} />
+			<img src={grave.src} />
+			<img src={rewind.src} />
+		</div>
+	</div>
+</div>
+
+<style>
+	.about-paragraph {
+		font-size: 1.5rem;
+	}
+
+	.about-image {
+		width: 100%;
+	}
+
+	.bass-music-paragraph {
+		font-size: 1.5rem;
+	}
+
+	.bass-music-image {
+		width: 100%;
+	}
+
+	.team-paragraph {
+		font-size: 1.5rem;
+	}
+
+	.team-image {
+		width: 100%;
+	}
+
+	.commitment-paragraph {
+		font-size: 1.5rem;
+	}
+
+	.commitment-image {
+		width: 100%;
+	}
+
+	.projects {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.projects img {
+		width: 10%;
+	}
+</style>

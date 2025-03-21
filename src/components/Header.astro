@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import bannierePhase from "../assets/banniere_phase.jpg";
+import logoPhaseBlanc from "../assets/logo_phase_blanc.png";
+---
+
+<header>
+	<div>
+		<Image
+			class="logo"
+			src={logoPhaseBlanc}
+			width={256}
+			alt="Le logo de phaselectro en blanc."
+		/>
+		<div class="navigation-bar">
+			<span>Qui sommes nous ?</span>
+			<span>La Bass Music</span>
+			<span>Notre Equipe</span>
+			<span>Nos Engagements</span>
+			<span>Evenements a venir</span>
+		</div>
+		<div class="banner-holder">
+			<img
+				class="banner"
+				src={bannierePhase.src}
+				alt="La bannière de phaselectro."
+			>
+		</div>
+	</div>
+</header>
+<style>
+	header > div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo {
+		margin-bottom: 2rem;
+	}
+
+	.navigation-bar {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+
+		margin-bottom: 2rem;
+	}
+
+    .banner-holder {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+	.banner {
+        width: 100%;
+	}
+</style>

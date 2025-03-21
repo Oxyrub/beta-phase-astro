@@ -5,5 +5,5 @@ import react from "@astrojs/react";
 export default defineConfig({
 	integrations: [react()],
 	site: "https://Oxyrub.github.io",
-	base: "/beta-phase-astro",
+	// base: "/beta-phase-astro",
 });
